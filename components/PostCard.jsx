@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import Categories from "./Categories";
 import Tags from "./Tags";
@@ -19,7 +18,7 @@ function PostCard({
             <div className="post-card-header">
                 {post_thumbnail && (
                     <div className="post-card-image">
-                        <Image className="post-card-image-img" height={300} width={500} src={post_thumbnail.URL} alt="" />
+                        <img className="post-card-image-img" src={post_thumbnail.URL} alt="" />
                     </div>
                 )}
                 <div className="post-card-content">
