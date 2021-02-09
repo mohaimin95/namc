@@ -1,0 +1,135 @@
+
+.wrapper {
+    background: #396afc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: 100vh;
+}
+.header {
+    width: 100%;
+    position: fixed;
+    height: var(--header-height);
+    background-color: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: var(--padding-left);
+    justify-content: flex-start;
+}
+.header-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.header-sub-title {
+    font-size: .8rem;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    color: white;
+    height: 70%;
+    padding-top: var(--header-height);
+    padding-left: var(--padding-left);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.intro {
+    width: 50rem;
+}
+
+.intro-header > h1 {
+    font-size: 1.8rem;
+}
+.intro-header > h1 >span {
+    font-weight: lighter;
+}
+.intro-header > h1 >span {
+    font-weight: lighter;
+}
+.intro-content {
+    text-align: justify;
+}
+.intro-footer {
+    margin-top: 1rem;
+}
+.button {
+    font-weight: bold;
+    cursor: pointer;
+    height: 3rem;
+    width: 10rem;
+    background-color: white;
+    border: 0;
+    color: #3562fc;
+    border-radius: 2rem;
+}
+.button:hover {
+    border:0;
+    background-color: #eee;
+}
+.button:focus {
+   outline: 0;
+}
+.intro-social {
+    display: flex;
+    margin-bottom: 1rem;
+}
+.social-item a {
+    color: white;
+    text-decoration: none;
+}
+.social-item > a::after  {
+    content: " | ";
+}
+.social-item:last-child > a::after {
+    content: "";
+}
+.picture {
+    display: flex;
+    text-align: center;
+    width: 32vh;
+    height: 32vh;
+}
+.picture > .picture-img > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1rem;
+}
+@media only screen and (max-width: 768px) {
+    .body {
+        font-size: .99rem;
+    }
+    /* For mobile phones: */
+    .header {
+        justify-content: center;
+        padding: 0;
+    }
+    .header-sub-title {
+        display: none;
+    }
+    .brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+    }
+    .content {
+        padding:2rem 1rem;
+    }
+    .intro {
+        width: 100%;
+        text-align: justify;
+    }
+    .picture {
+        display: none;
+    }
+  }
