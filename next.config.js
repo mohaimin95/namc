@@ -1,5 +1,5 @@
 module.exports = {
-  assetPrefix: '/mohaimin95.github.io/namc/',
+  assetPrefix: '/namc/',
   images: {
     loader: "imgix",
   }
